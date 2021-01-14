@@ -34,11 +34,3 @@ AOS.init();
 
 // Play project GIF on mouse over
 
-const ecommerceProject = document.getElementById('ecommerce-project');
-
-ecommerceProject.addEventListener('mouseover', () => {
-    ecommerceProject.src = './img/enrico_merchandise2.gif';
-})
-ecommerceProject.addEventListener('mouseout', () => {
-    ecommerceProject.src = './img//enrico_merchandise_thumbnail.jpg';
-})
