@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@import './variables';
+@import './texts';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background: #495057;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* remove defaults */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    border-radius: 20px;
+    border: 1px solid $primaryColor1;
+    padding: .5rem 1.2rem;
+    color: $primaryColor1;
+    transition: 300ms ease-out;
+}
+.btn:hover{
+    background: $primaryColor1;
+    color: #333;
+    padding-left: 1.5rem;
+}
+@import './navbar';
+@import './hamburger';
+.wrapper{
+    width: 100%;
+    min-height: 92vh;
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.wrapper.active{
+    opacity: .5!important;
+}
+/*Hero section*/
+@import './hero_section';
+
+/*About Section*/
+@import './about_section';
+
+/*Services*/
+@import './services_section';
+
+/*Projects*/
+@import './projects_section';
+
+/*Contact*/
+@import './contact_section';
+
+/*Footer*/
+footer{
+    padding: 100px 0;
+}
+.footer-logo{
+    width: 80px;
+}
+.footer-icon-container{
+    margin-top: 10px;
+    text-align: center;
+    .footer-icon{
+        color: $primaryColor4;
+        font-size: 1.5rem;
+        margin-right: 1.2rem;
+        transition: 300ms ease-out;
+    }
+    .footer-icon:hover{
+        color: $primaryColor1;
+    }
+}
+.footer-text{
+    font-size: 1rem;
+    color: $primaryColor4;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width:1200px){
+    .main-title{
+        font-size:55px;
+    }
+}
+@media(max-width:1000px){
+   .nav-icon-left{
+    display: none;
+   }
+   .hero{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .hero-right{
+       margin-top: 100px;
+   }
+   .project-container{
+       grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "project-right" "project-left";
+        .project-right{
+            margin-bottom: 2rem;
+        }
+   }
+   .project-container3{
+       grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "project-right" "project-left";
+        .project-right{
+            margin-bottom: 2rem;
+        }
+   }
+   .project-container2{
+       grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "project-right" "project-left";
+   }
+   .contact-info{
+       grid-template-columns: repeat(1,1fr);
+       grid-gap: 50px!important;
+   }
+}
+@media(max-width:786px){
+    .nav-lists{
+        display: none!important;
+    }
+    .nav-social{
+        display: none!important;
+    }
+    .hamburger{
+        display: block;
+    }
+    .service-content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "service-right" "service-left";
+    }
+    .service-title{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .service-text{
+        text-align: center;
+    }
+    .project-right{
+        margin-bottom: 2rem;
+    }
+    .project-left{
+        h2{
+            text-align: center;
+        }
+        p{
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(max-width: 485px){
+    .main-title{
+        font-size:45px;
+    }
+    .contact-subtitle{
+        font-size: 1.1rem;
+    }
+    .project-demo-container .text-content{
+        font-size: .8rem!important;
+    }
+
+}
+@media(max-width: 400px){
+    .main-title{
+        font-size:35px;
+    }
+    .subtitle{
+        font-size: 23px;
+    }
+    .contact-info{
+        grid-gap: 1rem;
+    }
+    .contact-subtitle{
+        word-wrap: break-word;
+        font-size: 1rem;
+    }
+    .btn-contact{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    .btn-contact:hover{
+        padding-left: 1.5rem;
+    }
+}
+@media(max-width: 340px){
+    .main-title{
+        font-size:30px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .contact-subtitle{
+        word-wrap: break-word;
+        font-size: .8rem;
+    }
+}

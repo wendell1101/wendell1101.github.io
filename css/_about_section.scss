@@ -1,0 +1,16 @@
+.about{
+    background:  $primaryColor3;
+    color: $primaryColor4;
+    padding-top: 100px;
+    overflow: hidden;
+    .container{
+        h1{
+            margin: 0 auto;
+        }
+       @import './line';
+    }
+}
+.about-image{
+    width: 100%;
+    height: 100%;
+}
