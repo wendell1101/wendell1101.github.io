@@ -1,43 +1,50 @@
-
-.contact{
+.contact {
     width: 100%;
     padding: 100px 0;
     background: $primaryColor3;
 }
-.contact-text{
+
+.contact-text {
     font-size: 1.2rem;
 }
-.contact-line{
+
+.contact-line {
     width: 100px;
 }
-.contact-link{
+
+.contact-link {
     font-size: 1.4rem;
 }
-.contact-link:hover{
+
+.contact-link:hover {
     color: #2ec05c;
 }
-.contact-info{
+
+.contact-info {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
-.contact-subtitle{
+
+.contact-subtitle {
     font-weight: 700;
 }
-.btn-contact{
+
+.btn-contact {
     background: $primaryColor1;
     color: #333;
-    padding: .8rem 2rem;
     font-size: 1.5rem;
     border-radius: 30px;
+    transition: 300ms ease-out;
 }
-.btn-contact:hover{
+
+.btn-contact:hover {
+    padding-left: 2rem;
     background: #2ec05c;
-    padding-left: 2.7rem;
-    color: #fff;
 }
-.icon{
+
+.icon {
     margin: 0 auto;
     margin-top: 1rem;
     width: 50px;
@@ -47,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .contact-icon{
+    .contact-icon {
         color: $primaryColor1;
         font-size: 1.5rem;
     }

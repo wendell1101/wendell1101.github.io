@@ -23,6 +23,7 @@
 
 .text-content {
   color: #d1cbcb;
+  font-size: .8rem;
 }
 
 * {
@@ -32,7 +33,8 @@
           box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   background: #495057;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -557,7 +559,7 @@ a {
 
 .project-left p {
   padding-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
 }
 
@@ -588,6 +590,10 @@ a {
 
 .project-right .project-demo-container a {
   color: #93f8b3;
+}
+
+.tools {
+  color: #8ffdb2;
 }
 
 /*animations*/
@@ -647,15 +653,15 @@ a {
 .btn-contact {
   background: #4EFF85;
   color: #333;
-  padding: .8rem 2rem;
   font-size: 1.5rem;
   border-radius: 30px;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
 .btn-contact:hover {
+  padding-left: 2rem;
   background: #2ec05c;
-  padding-left: 2.7rem;
-  color: #fff;
 }
 
 .icon {
@@ -801,6 +807,9 @@ footer {
     padding-top: 1rem;
     text-align: center;
     font-size: 1rem;
+  }
+  .tools {
+    text-align: center;
   }
 }
 
