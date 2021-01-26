@@ -22,11 +22,11 @@
         <div class="container" data-aos="fade-down">
             <a href="#" class="logo"><img src="./img/my_logo.png" alt="logo"></a>
             <ul class="nav-lists">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <div class="bar bar1"></div>
@@ -42,14 +42,15 @@
 
         <ul class="side-nav">
             <a href="#" class="side-nav-logo"><img src="./img/my_logo.png" alt="logo"></a>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="side-link active"><a href="#">Home</a></li>
+            <li class="side-link"><a href="#about" style="width: 100%;">About</a></li>
+            <li class="side-link"><a href="#services">Services</a></li>
+            <li class="side-link"><a href="#projects">Projects</a></li>
+            <li class="side-link"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    <!--Back to top button-->
+    <a id="button"><i class="fas fa-arrow-up arrow"></i></a>
     <div class="wrapper">
         <div class="container">
             <div class="row hero">
@@ -68,8 +69,8 @@
                             </p>
                         </div>
                         <div class="hero-btn">
-                            <a href="#" class="btn" data-aos="fade-up">Let's Talk</a>
-                            <a href="#" class="btn " data-aos="fade-up">Get Resume</a>
+                            <a href="#contact" class="btn" data-aos="fade-up">Let's Talk</a>
+                            <a href="documents/my_resume.pdf" target="_blank" class="btn " data-aos="fade-up">Get Resume</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +162,7 @@
                         </div>
                     </div>
                     <!--project1-->
-                    <small class=" text-secondary text-center mt-4">Special Note: The project with database does't show pictures yet because I can't buy my own server and storage for my files. I don't even have a card. I only got  skills and dedication for my dream job for now.</small>
+                    <small class=" text-secondary text-center mt-4" data-aos="fade-up">Special Note: The project with database does't show pictures yet because I can't buy my own server and storage for my files. I don't even have a card. I only got  skills and dedication for my dream job for now.</small>
                     <div class="project-container">
 
                         <div class="project-left">
@@ -294,6 +295,8 @@
     <!--AOS-->
 
     <script src="./js/aos.js"></script>
+    <!--Jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
