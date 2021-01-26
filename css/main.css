@@ -207,6 +207,7 @@ a {
 }
 
 .side-nav li a {
+  width: 100%;
   color: #fff;
 }
 
