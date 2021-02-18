@@ -1,3 +1,3 @@
 # PersonalSiteVersion04
 
-demolink: https://wendell-suazo.netlify.app/
+demolink: https://wendell-suazo.me
