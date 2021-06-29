@@ -1,86 +1,89 @@
 .projects {
-    min-height: 100vh;
-    padding: 100px 0;
-    overflow: hidden;
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
 }
-
+.project {
+  background: $primaryColor3;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 .project-container {
-    margin-top: 50px;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "project-left project-right";
-    overflow: hidden;
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "project-left project-right";
+  overflow: hidden;
 }
 
 .project-container2 {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    grid-template-areas: "project-right project-left";
-    overflow: hidden;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-template-areas: "project-right project-left";
+  overflow: hidden;
 }
 
 .project-container3 {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    grid-template-areas: "project-left project-right";
-    overflow: hidden;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  grid-template-areas: "project-left project-right";
+  overflow: hidden;
 }
 
 // .project-image{
 //     animation: appear .1s ease-in-out;
 // }
 .project-left {
-    grid-area: project-left;
-    h2 {
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-    }
-    p {
-        padding-top: 2rem;
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-    }
+  grid-area: project-left;
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  p {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
 }
 
 .project-right {
-    grid-area: project-right;
-    background: $primaryColor3;
-    padding: 1rem;
-    border-radius: .5rem;
-    // padding-bottom:
-    .container {
-        p {
-            color: $primaryColor4;
-        }
+  grid-area: project-right;
+  background: $primaryColor3;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  // padding-bottom:
+  .container {
+    p {
+      color: $primaryColor4;
     }
-    .project-demo-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 1rem;
-        a {
-            color: #93f8b3;
-        }
+  }
+  .project-demo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    a {
+      color: #93f8b3;
     }
+  }
 }
 
 .tools {
-    color: #8ffdb2;
+  color: #8ffdb2;
 }
-
 
 /*animations*/
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -11,19 +11,19 @@
 
 .main-title {
   font-size: 65px;
-  color: #4EFF85;
+  color: #4eff85;
   letter-spacing: 2px;
   margin: 1.2rem 0;
 }
 
 .text-header {
-  color: #4EFF85;
+  color: #4eff85;
   letter-spacing: 2px;
 }
 
 .text-content {
   color: #d1cbcb;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 * {
@@ -53,15 +53,15 @@ a {
 
 .btn {
   border-radius: 20px;
-  border: 1px solid #4EFF85;
+  border: 1px solid #4eff85;
   padding: .5rem 1.2rem;
-  color: #4EFF85;
+  color: #4eff85;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
 .btn:hover {
-  background: #4EFF85;
+  background: #4eff85;
   color: #333;
   padding-left: 1.5rem;
 }
@@ -116,11 +116,11 @@ a {
 }
 
 .main-nav .container ul li a:hover {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .main-nav .container ul li a.active {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .main-nav .container .nav-social {
@@ -144,7 +144,7 @@ a {
 }
 
 .main-nav .container .nav-social a:hover {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .main-nav .container .nav-social .nav-icon {
@@ -153,7 +153,7 @@ a {
 }
 
 .main-nav .container .nav-social .nav-icon:hover {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .main-nav .container .nav-social .envelope-btn {
@@ -168,7 +168,7 @@ a {
 }
 
 .main-nav .container .nav-social .envelope-btn .fa-envelope {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .main-nav .container .nav-social .envelope-btn:hover {
@@ -229,7 +229,7 @@ a {
 }
 
 .side-nav .active {
-  background: #4EFF85;
+  background: #4eff85;
 }
 
 .side-nav.active {
@@ -522,6 +522,12 @@ a {
   overflow: hidden;
 }
 
+.project {
+  background: #212529;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
 .project-container {
   margin-top: 50px;
   display: -ms-grid;
@@ -578,7 +584,7 @@ a {
   grid-area: project-right;
   background: #212529;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .project-right .container p {
@@ -660,7 +666,7 @@ a {
 }
 
 .btn-contact {
-  background: #4EFF85;
+  background: #4eff85;
   color: #333;
   font-size: 1.5rem;
   border-radius: 30px;
@@ -692,7 +698,7 @@ a {
 }
 
 .icon .contact-icon {
-  color: #4EFF85;
+  color: #4eff85;
   font-size: 1.5rem;
 }
 
@@ -719,7 +725,7 @@ footer {
 }
 
 .footer-icon-container .footer-icon:hover {
-  color: #4EFF85;
+  color: #4eff85;
 }
 
 .footer-text {
