@@ -1,0 +1,19 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "demolink: https://wendell-suazo.netlify.app/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendell1101/PersonalSite.git"
+  },
+  "author": "wendell suazo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendell1101/PersonalSite/issues"
+  },
+  "homepage": "https://github.com/wendell1101/PersonalSite#readme"
+}
