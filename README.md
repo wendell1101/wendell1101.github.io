@@ -1,3 +1,3 @@
 # My Personal Site
 
-demolink: https://wendell-suazo.netlify.app/
+demolink: https://wendell1101.github.io
