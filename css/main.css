@@ -853,6 +853,9 @@ footer {
   .tools {
     text-align: center;
   }
+  .hero{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 485px) {
