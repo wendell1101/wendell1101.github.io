@@ -16,9 +16,6 @@ html {
     overflow-x: hidden;
 }
 
-
-/* remove defaults */
-
 li {
     list-style: none;
 }
@@ -57,28 +54,16 @@ a {
     opacity: .5!important;
 }
 
-
-/*Hero section*/
-
 @import './hero_section';
-
-/*About Section*/
 
 @import './about_section';
 
-/*Services*/
-
 @import './services_section';
-
-/*Projects*/
 
 @import './projects_section';
 
-/*Contact*/
-
 @import './contact_section';
-
-/*Footer*/
+@import './timeline.css';
 
 footer {
     padding: 100px 0;
@@ -116,9 +101,6 @@ footer {
     height: 50%;
     z-index: 100;
 }
-
-
-/*MEDIA QUERIES*/
 
 @media(max-width:1200px) {
     .main-title {
@@ -210,12 +192,6 @@ footer {
         font-size: .8rem!important;
     }
 }
-
-
-/*back to top button*/
-
-
-/*back to top button*/
 
 #button {
     display: flex;

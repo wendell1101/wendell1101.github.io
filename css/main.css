@@ -966,3 +966,185 @@ footer {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #f7f7f7; /* Compatible with existing light text color */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 5px;
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #4eff85; /* Using primaryColor1 */
+    border: 3px solid #f7f7f7; /* Compatible with existing light text color */
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #4eff85; /* Using primaryColor1 */
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #4eff85; /* Using primaryColor1 */
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #4eff85; /* Using primaryColor1 */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #4eff85 transparent transparent; /* Using primaryColor1 */
+}
+
+.right::after {
+    left: -16px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #495057; /* Using a darker background color from existing */
+    position: relative;
+    border-radius: 6px;
+    color: #f7f7f7; /* Compatible with existing light text color */
+}
+
+.timeline-date {
+    position: absolute;
+    top: 18px;
+    width: 100px;
+    color: #4eff85; /* Using primaryColor1 */
+    font-weight: bold;
+}
+
+.left .timeline-date {
+    right: -130px;
+}
+
+.right .timeline-date {
+    left: -130px;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f7f7f7; /* Compatible with existing light text color */
+}
+
+.timeline-company {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #d1cbcb; /* Compatible with existing text color */
+}
+
+.timeline-description ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #d1cbcb; /* Compatible with existing text color */
+}
+
+.timeline-description li {
+    margin-bottom: 5px;
+}
+
+.timeline-skills {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #8ffdb2; /* Compatible with existing tools color */
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-container::before {
+        left: 60px;
+        border: medium solid #4eff85; /* Using primaryColor1 */
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #4eff85 transparent transparent; /* Using primaryColor1 */
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .left .timeline-date, .right .timeline-date {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+
+    .timeline-date {
+        color: #4eff85; /* Using primaryColor1 */
+    }
+
+    .timeline-content {
+        background-color: #495057; /* Using a darker background color from existing */
+    }
+
+    .timeline-container::after {
+        border-color: #f7f7f7; /* Compatible with existing light text color */
+        left: 15px;
+    }
+}
+/*# sourceMappingURL=main.css.map */
