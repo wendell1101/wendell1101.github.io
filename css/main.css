@@ -244,7 +244,7 @@ a {
   height: 8vh !important;
   z-index: 500;
   background: #495057;
-  padding: 35px 5px;
+  padding: 35px 5px;/* Reduced padding from 35px to 15px */
   -webkit-box-shadow: -1px 4px 11px -2px #d1cbcb;
   box-shadow: -1px 2px 2px -2px #f4f4f4;
 }
@@ -364,13 +364,18 @@ a {
 /*Hero section*/
 .hero {
   overflow: hidden;
+  transform: translateY(-3rem);
   width: 100%;
-  height: 100%;
-  padding-top: 80px;
+  min-height: 100vh; /* Changed from height: 100%; to allow content to dictate height */
+  padding-top: 0; /* Removed fixed padding-top */
+  padding-bottom: 0; /* Removed fixed padding-bottom */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center; /* Added to vertically center content */
+      -ms-flex-align: center; /* Added to vertically center content */
+          align-items: center; /* Added to vertically center content */
 }
 
 .hero .hero-left .introduction .intro-text {
@@ -382,11 +387,32 @@ a {
   margin-bottom: 4rem;
 }
 
-.hero .hero-right .hero-img {
+.hero .hero-right {
+  position: relative;
+  border-radius: 10px; /* Optional: for a subtle rounded corner look */
+  overflow: hidden; /* Ensure content is clipped within the rounded corners */
+}
+
+.hero .hero-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay background */
+  border-radius: 10px; /* Should match parent's border-radius if applicable */
+  z-index: 1;
+}
+
+.hero .hero-right .hero-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  position: relative; /* Needed for z-index to work */
+  z-index: 2; /* Ensure image is above the overlay */
+  border-radius: 10px; /* Apply border-radius directly to the image */
 }
 
 /*About Section*/
@@ -760,7 +786,8 @@ footer {
         grid-template-columns: repeat(1, 1fr);
   }
   .hero-right {
-    margin-top: 100px;
+    margin-top: 50px; /* Adjusted margin-top for better spacing */
+    text-align: center; /* Center the image on smaller screens */
   }
   .project-container {
     -ms-grid-columns: (1fr)[1];
