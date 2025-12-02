@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendell Suazo - Professional Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Wendell Suazo</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="dark-mode-toggle" class="dark-mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm Wendell Suazo</h1>
+                <p>Full Stack Developer | UI/UX Designer</p>
+                <a href="#contact" class="btn">Let's Connect</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/profile.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a passionate Full Stack Developer with a knack for creating beautiful and functional web applications.
+                    With expertise in both frontend and backend technologies, I enjoy bringing ideas to life from concept to deployment.
+                    My journey in tech has been driven by a desire to build intuitive user experiences and robust systems.
+                </p>
+                <p>
+                    Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning
+                    to stay updated with the latest industry trends. I believe in clean code, efficient solutions, and user-centric design.
+                </p>
+                <a href="documents/suazo_wendell_cv_2025_new.pdf" target="_blank" class="btn">View Resume</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and scalable web applications using modern frameworks and technologies.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user interfaces with a focus on user experience.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust and efficient server-side logic, APIs, and database management.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Crafting cross-platform mobile applications with excellent performance and user experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="img/cms.PNG" alt="Project 1">
+                    <h3>Content Management System</h3>
+                    <p>A full-featured CMS built with React and Node.js, allowing users to manage website content easily.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-small" target="_blank">View Live</a>
+                        <a href="#" class="btn-small" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/pinoy_akademya_lms.JPG" alt="Project 2">
+                    <h3>E-learning Platform</h3>
+                    <p>An interactive e-learning platform with course management, user authentication, and progress tracking.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-small" target="_blank">View Live</a>
+                        <a href="#" class="btn-small" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/st_vincent_online_booking.JPG" alt="Project 3">
+                    <h3>Online Booking System</h3>
+                    <p>A comprehensive booking system for appointments and services, featuring real-time availability and notifications.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-small" target="_blank">View Live</a>
+                        <a href="#" class="btn-small" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>Have a project in mind or just want to say hello? Feel free to reach out!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/wendellsuazo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/wendell1101" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:wendellsuazo@email.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wendell Suazo. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

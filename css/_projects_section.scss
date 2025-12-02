@@ -1,89 +1,98 @@
 .projects {
-  min-height: 100vh;
-  padding: 100px 0;
-  overflow: hidden;
-}
-.project {
-  background: $primaryColor3;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-.project-container {
-  margin-top: 50px;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "project-left project-right";
-  overflow: hidden;
-}
+    padding: 80px 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 
-.project-container2 {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  grid-template-areas: "project-right project-left";
-  overflow: hidden;
-}
-
-.project-container3 {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  grid-template-areas: "project-left project-right";
-  overflow: hidden;
-}
-
-// .project-image{
-//     animation: appear .1s ease-in-out;
-// }
-.project-left {
-  grid-area: project-left;
-  h2 {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-  }
-  p {
-    padding-top: 2rem;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-  }
-}
-
-.project-right {
-  grid-area: project-right;
-  background: $primaryColor3;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  // padding-bottom:
-  .container {
-    p {
-      color: $primaryColor4;
+    .text-header {
+        color: var(--heading-color);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
     }
-  }
-  .project-demo-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
-    a {
-      color: #93f8b3;
+
+    .project-container,
+    .project-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        background-color: var(--card-background-color);
+        box-shadow: var(--shadow-color) 0px 8px 24px;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 40px;
+
+        .project-left {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+
+            .subtitle2 {
+                color: var(--primary-color);
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .text-content {
+                line-height: 1.8;
+                margin-top: 10px;
+            }
+
+            .tools span {
+                display: inline-block;
+                background-color: var(--secondary-color);
+                color: var(--background-color);
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-top: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .project-right {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: center;
+
+            .project-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: var(--shadow-color) 0px 8px 24px;
+                margin-bottom: 20px;
+            }
+
+            .project-demo-container a {
+                color: var(--primary-color);
+                text-decoration: none;
+                margin: 0 10px;
+                font-weight: 500;
+
+                &:hover {
+                    color: var(--primary-color-dark);
+                }
+            }
+        }
     }
-  }
-}
 
-.tools {
-  color: #8ffdb2;
-}
+    .project-container2 {
+        flex-direction: row-reverse;
+    }
 
-/*animations*/
+    .project {
+        background-color: var(--card-background-color);
+        box-shadow: var(--shadow-color) 0px 8px 24px;
+        border-radius: 10px;
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .text-content {
+            color: var(--text-color);
+        }
+    }
 }

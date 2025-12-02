@@ -1,85 +1,74 @@
-//Variables
-const hamburger = document.querySelector('.hamburger');
-const bar1 = document.querySelector('.bar1');
-const bar2 = document.querySelector('.bar2');
-const bar3 = document.querySelector('.bar3');
-const sideNav = document.querySelector('.side-nav');
-const wrapper = document.querySelector('.wrapper');
-const navbar = document.querySelector('.main-nav')
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-// hamburger menu side nav
-hamburger.addEventListener('click', () => {
-    // nav.classList.toggle('main-nav-active');
-    hamburger.classList.toggle('hamburger-active');
-    bar1.classList.toggle('bar1-cross-left');
-    bar2.classList.toggle('bar2-active');
-    bar3.classList.toggle('bar3-cross-right');
-    sideNav.classList.toggle('active');
-    wrapper.classList.toggle('active');
-})
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
 
-// fixed navbar
-window.addEventListener('scroll', fixNav)
-
-function fixNav() {
-    if (window.scrollY > navbar.offsetHeight + 200) {
-        navbar.classList.add('sticky');
+    // Save user preference to localStorage
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
     } else {
-        navbar.classList.remove('sticky');
-    }
-}
-
-//main-nav active links
-const navLinks = document.getElementsByClassName("nav-link");;
-
-for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", function() {
-        let current = document.getElementsByClassName("active");
-
-        // If there's no active class
-        if (current.length > 0) {
-            current[0].className = current[0].className.replace(" active", "");
-        }
-
-        // Add the active class to the current/clicked button
-        this.className += " active";
-    });
-}
-
-//side-nav active links
-const sideLinks = document.getElementsByClassName("side-link");;
-
-for (let i = 0; i < sideLinks.length; i++) {
-    sideLinks[i].addEventListener("click", function() {
-        let current = document.getElementsByClassName("side-link active");
-
-        // If there's no active class
-        if (current.length > 0) {
-            current[0].className = current[0].className.replace(" active", "");
-        }
-
-        // Add the active class to the current/clicked button
-        this.className += " active";
-    });
-}
-
-// Initialize AOS
-AOS.init();
-
-
-//jquery
-// back to top button
-let btn = $('#button');
-
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
+        localStorage.setItem('theme', 'light');
     }
 });
 
-btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '300');
+// Check for saved theme preference on page load
+window.addEventListener('load', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+});
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Close hamburger menu when a nav link is clicked
+document.querySelectorAll('.nav-links li a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// AOS Initialization
+AOS.init({
+    duration: 800,
+    once: true
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById('button');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Show button after scrolling down 300px
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });

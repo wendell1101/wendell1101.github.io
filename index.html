@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wendell Suazo</title>
+    <title>Wendell Suazo - Professional Portfolio</title>
     <link rel="icon" href="img/my_logo.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/aos.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <nav class="main-nav">
         <div class="container" data-aos="fade-down">
-            <a href="#" class="logo"><img src="./img/my_logo.png" alt="logo"></a>
+            <a href="#" class="logo"><img src="img/my_logo.png" alt="logo"></a>
             <ul class="nav-lists">
                 <li><a href="#" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -33,17 +30,12 @@
                 <a href="https://www.linkedin.com/in/wendell-suazo-8339251aa/" target="_blank" class="nav-icon-left"><i class="nav-icon fab fa-linkedin"></i><span>Linkedin</span></a>
                 <a href="https://github.com/wendell1101" target="_blank" class="nav-icon-left"><i class="nav-icon fab fa-github"></i><span>Github</span></a>
                 <a href="#contact" class="envelope-btn"><i class="nav-icon far fa-envelope"></i></a>
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
 
-        <ul class="side-nav">
-            <a href="#" class="side-nav-logo"><img src="./img/my_logo.png" alt="logo"></a>
-            <li class="side-link active"><a href="#">Home</a></li>
-            <li class="side-link"><a href="#about" style="width: 100%;">About</a></li>
-            <li class="side-link"><a href="#services">Services</a></li>
-            <li class="side-link"><a href="#projects">Projects</a></li>
-            <li class="side-link"><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
     <!--Back to top button-->
     <a id="button"><i class="fas fa-arrow-up arrow"></i></a>
@@ -71,7 +63,7 @@
                     </div>
                 </div>
                 <div class="hero-right" data-aos="fade-down">
-                    <img src="./img/FORMAL_PIC.png" alt="Wendell Suazo's profile picture" class="hero-img img-fluid">
+                    <img src="img/FORMAL_PIC.png" alt="Wendell Suazo's profile picture" class="hero-img img-fluid">
                 </div>
             </div>
 
@@ -81,7 +73,7 @@
             <div class="container">
                 <div class="row mt-5 align-items-center">
                     <div class="col-md-6 about-left" data-aos="fade-right">
-                        <img src="./img/profile.png" alt="profile" class="about-image">
+                        <img src="img/profile.png" alt="profile" class="about-image">
                     </div>
                     <div class="col-md-6 about-right" data-aos="fade-left">
                         <div class="col-12 d-flex justify-content-center">
@@ -265,384 +257,381 @@
                     </div>
                 </div>
             </div>
+
+            <!--projects section -->
+            <div class="projects" id="projects">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h2 class="text-header text-center" data-aos="fade-down">Featured Projects</h2>
+
+                        </div>
+                        <div class="col-12 mt-2" data-aos="fade-down">
+                            <div class="line-container">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="project-container2">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">CORAI</h2>
+                                <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
+                                    An AI-powered platform for document and text processing: manage custom LLMs, apply OCR for text extraction, classify documents, and automate analysis.  
+                                    Bulk orders can be processed either by uploading documents for parsing or by sending purchase orders via email for automatic batch handling.
+                                    <br><small class="text-white text-sm">- One of the two developers who built this platform</small>
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, Symfony, Google Document AI, Vertex AI with OCR & LLM</span>
+                                </div>
+                            </div>
+
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/corai_1.png" alt="CORAI project screenshot" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="https://github.com/wendell1101/corai" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
+                                    <a href="#" class="text-content" style="pointer-events: none; cursor: default;">Live Demo</a>                            </div>
+                            </div>
+                        </div>
+                        <!--calambaentrep-->
+                        <div class="project-container">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Calamba Entrep Online Store</h2>
+                                <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
+                                    Calamba Entrep is an online marketplace where anyone can sell, buy, and discover one-of-a-kind products. We stand behind our merchants & their products. We're also a community working to make a difference for small businesses.
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript, PHP ,MYSQL, Laravel, Laravel-livewire, Vue Js</span>
+                                </div>
+                            </div>
+
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/calamba_entrep.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
+                                    <a href="https://calambaentrep.com/" target="_blank" class="text-content">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-container2">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">T1soft Smart backend platform</h2>
+                                <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
+                                    Gaming Platform with multiple clients and services around the world
+                                    <br><small class="text-white text-sm">- One of the developers who built this platform</small>
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript, PHP, MYSQL, Codeigniter, Laravel, Automated testing</span>
+                                </div>
+                            </div>
+
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/vtime.jpeg" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
+                                    <a href="" target="_blank" class="text-content" style="color: gray; cursor: not-allowed;">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Flowerstore Ecommerce Website</h2>
+                                <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
+                                    Metro Manila, Cebu City and Davao City #1 Online Gift Store
+                                    <br><small class="text-white text-sm">- One of the developers who built this platform</small>
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Tailwind, Javascript, PHP ,MYSQL, Laravel, Laravel-livewire, Vue Js</span>
+                                </div>
+                            </div>
+
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/flowerstore.jpeg" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
+                                    <a href="#" class="text-content" style="pointer-events: none; cursor: default;">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container2">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-right">Flowerstore Attendance System</h2>
+                                <p class="text-content" data-aos="fade-up">
+                                    An attendance sysyem for Blue Aurora Solutions Inc / Flowerstore employees, being used for three different countries : Philippines, Thailand, Vietnam
+                                <div class="tools">
+                                    <span>HTML, CSS, Tailwind, Javascript, PHP/Laravel, Laravel-livewire, MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-right" data-aos="fade-in">
+                                <img src="img/fs_attendance.jpg" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="#" target="_blank" class="text-content">Source Code</a>
+                                    <a href="#" target="_blank" class="text-content">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-right">Tech2U Computer Repair Service</h2>
+                                <p class="text-content" data-aos="fade-up">
+                                    Tech2U Computer Repair Service is a place for you to to fix your computers and cellphone gadgets at affordable and reasonable price. We've been repairing broken or corrupted electronic gadgets. Whether your device fell on concrete or water, we'll make
+                                    sure it will run again in its best condition.
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, Laravel-livewire, MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-right" data-aos="fade-in">
+                                <img src="img/tech2u.JPG" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="https://github.com/wendell1101/EnricoMerchandise-Ecommerce-laravel" target="_blank" class="text-content">Source Code</a>
+                                    <a href="https://tech2urepairs.com/" target="_blank" class="text-content">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- coffeeroyale-->
+                        <div class="project-container2">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Coffee Royale</h2>
+                                <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
+                                    Coffee Royale is a café built with passion to share the best coffee experience in every cup. Every cup of coffee is carefully processed to serve you the best quality brewed coffee, from choosing the best beans we can source each season directly from our
+                                    farmers, to roasting and grinding the beans and brewing our coffee.
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, SASS, Bootstrap, Javascript, PHP ,MYSQL</span>
+                                </div>
+                            </div>
+
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/coffee_royale.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="https://github.com/wendell1101/Online-Booking-System" target="_blank" class="text-content">Source Code</a>
+                                    <a href="https://coffeeroyale1.000webhostapp.com/" target="_blank" class="text-content">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--project1-->
+
+                        <div class="project-container">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-right">RMCS</h2>
+                                <p class="text-content" data-aos="fade-up">
+                                    An Eccommerce Web application made mainly using Laravel as server-side language. The system admin and managers can directly place cleaning reservations.
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-right" data-aos="fade-in">
+                                <img src="img/rmcs.png" alt="project-image" class="project-image img-fluid" id="rmcs" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="https://github.com/wendell1101/rmcs" target="_blank" class="text-content">Source Code</a>
+                                    <a href="https://rmcs.online/" target="_blank" class="text-content">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-container2">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-right">Enrico Merchandise</h2>
+                                <p class="text-content" data-aos="fade-up">
+                                    An Eccommerce Web application made mainly using Laravel as server-side language. The customer has the ability to add to cart the selected items, checkout and pay using Cash on Delivery(COD) or through PAYPAL. The system also offers complete administration
+                                    panel and users are divided into several roles/privelages such as admin, product manager and customer.
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-right" data-aos="fade-in">
+                                <img src="img/enrico_merchandise_thumbnail.jpg" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
+                                <div class="project-demo-container">
+                                    <a href="https://github.com/wendell1101/EnricoMerchandise-Ecommerce-laravel" target="_blank" class="text-content">Source Code</a>
+                                    <a href="https://enricomerchandise.000webhostapp.com/" target="_blank" class="text-content">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--project2-->
+                        <div class="project-container">
+                            <div class="project-left">
+                                <h2 class="subtitle2" data-aos="fade-left">COMSOC Online Voting System</h2>
+                                <p class="text-content" data-aos="fade-up">
+                                    An Online Voting System purpose is to make election more confortable. The student/voter of Computer Society PUP Sto. Tomas can vote easier online by just logging in and choosing his/her desired candidate.
+
+                                </p>
+                                <div class="tools">
+                                    <span>HTML, CSS, Bootstrap, Javascript,PHP/Laravel, MYSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-right" data-aos="fade-right">
+                                <img src="img/comsoc_voting.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                <div class="project-demo-container" data-aos="fade-in">
+                                    <a href="https://github.com/wendell1101/VotingSystem" target="_blank" class="text-content">Source Code</a>
+                                    <a href="#" target="_blank" class="text-content">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- MORE PROJECTS -->
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2 class="text-header text-center" data-aos="fade-down">More Projects</h2>
+                        </div>
+                        <div class="col-12 mt-2" data-aos="fade-down">
+                            <div class="line-container">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <!-- COMSOC VOTING SYSTEM -->
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/cms2.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="https://github.com/wendell1101/TheExpeditions-CMS" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="https://theexpeditions.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/fea_loan.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="https://github.com/wendell1101/loan_app" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="https://fealoan.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tcu monitoring -->
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/tcu_monitoring.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="https://github.com/wendell1101/elearning" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="https://tcucheck.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- st vincent emission -->
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/st_vincent_online_booking.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="#" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="#" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pinoy akademya -->
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/pinoy_akademya_lms.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="https://github.com/wendell1101/Learning-Management-System" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="https://future-academy.herokuapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- dragon conqueror -->
+                            <div class="col-md-4 mb-3">
+                                <div class="project p-2">
+                                    <img src="img/dragon_conqueror.png" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
+                                    <div class="p-2">
+                                        <a href="https://github.com/wendell1101/Dragon-Conqueror" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
+                                        <a href="https://dragon-conqueror.netlify.app/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Contact section-->
+            <div class="contact" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-header text-center" data-aos="fade-down">Get In Touch</h2>
+                        </div>
+                        <div class="col-12 mt-2" data-aos="fade-down">
+                            <div class="line-container contact-line">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-5 contact-subtitle" data-aos="fade-up">
+                            <h4 class="text-content contact-text mb-2">Let's make something great together.</h4>
+                            <h4 class="text-content contact-text mt-3">Start by <a href="#" class="text-header contact-link">saying hi!</a></h4>
+                        </div>
+                        <div class="contact-info text-center">
+                            <div class="">
+                                <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">+639959768531</h4>
+                                <a class="icon"><i class="contact-icon fas fa-phone" data-aos="fade-up"></i></a>
+                            </div>
+                            <div class="">
+                                <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">wendellchansuazo11@gmail.com</h4>
+                                <a class="icon"><i class="contact-icon far fa-envelope" data-aos="fade-up"></i></a>
+                            </div>
+                            <div class="">
+                                <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">@wendell1101</h4>
+                                <a href="https://github.com/wendell1101" class="icon" data-aos="fade-up"><i class="contact-icon fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-5">
+                            <a href="mailto:wendellchansuazo11@gmail.com" class="btn btn-contact" data-aos="fade-in">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <footer>
+                <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="logo"><img src="img/my_logo.png" class="footer-logo" alt="logo"></a>
+                        </div>
+                        <div class="col-md-12 text-center mt-5">
+                            <div class="footer-icon-container">
+                                <a href="https://www.facebook.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-facebook-f" target="_blank"></i></a>
+                                <a href="https://www.twitter.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-twitter"></i></a>
+                                <a href="https://www.github.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-github" ></i></a>
+                                <a href="https://www.linkedin.com/in/wendell-suazo-8339251aa/" target="_blank"><i class="footer-icon fab fa-linkedin-in" ></i></a>
+                                <a href="https://www.youtube.com/channel/UCprablWZYWvHOMGL49yweOA" target="_blank"><i class="footer-icon fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center mt-5">
+                            <p class="footer-text">Copyright &copy; 2025 - Wendell Suazo</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <!--projects section -->
-        <div class="projects" id="projects">
-            <div class="container">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <h2 class="text-header text-center" data-aos="fade-down">Featured Projects</h2>
+        <!--JS-->
 
-                    </div>
-                    <div class="col-12 mt-2" data-aos="fade-down">
-                        <div class="line-container">
-                            <div class="line"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                    <div class="project-container2">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">CORAI</h2>
-                            <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
-                                An AI-powered platform for document and text processing: manage custom LLMs, apply OCR for text extraction, classify documents, and automate analysis.  
-                                Bulk orders can be processed either by uploading documents for parsing or by sending purchase orders via email for automatic batch handling.
-                                <br><small class="text-white text-sm">- One of the two developers who built this platform</small>
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, Symfony, Google Document AI, Vertex AI with OCR & LLM</span>
-                            </div>
-                        </div>
+        <!--AOS-->
 
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/corai_1.png" alt="CORAI project screenshot" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="https://github.com/wendell1101/corai" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
-                                <a href="#" class="text-content" style="pointer-events: none; cursor: default;">Live Demo</a>                            </div>
-                        </div>
-                    </div>
-                    <!--calambaentrep-->
-                    <div class="project-container">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Calamba Entrep Online Store</h2>
-                            <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
-                                Calamba Entrep is an online marketplace where anyone can sell, buy, and discover one-of-a-kind products. We stand behind our merchants & their products. We're also a community working to make a difference for small businesses.
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript, PHP ,MYSQL, Laravel, Laravel-livewire, Vue Js</span>
-                            </div>
-                        </div>
-
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/calamba_entrep.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
-                                <a href="https://calambaentrep.com/" target="_blank" class="text-content">Live
-                                    Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-container2">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">T1soft Smart backend platform</h2>
-                            <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
-                                Gaming Platform with multiple clients and services around the world
-                                <br><small class="text-white text-sm">- One of the developers who built this platform</small>
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript, PHP, MYSQL, Codeigniter, Laravel, Automated testing</span>
-                            </div>
-                        </div>
-
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/vtime.jpeg" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
-                                <a href="" target="_blank" class="text-content" style="color: gray; cursor: not-allowed;">Live
-                                    Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Flowerstore Ecommerce Website</h2>
-                            <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
-                                Metro Manila, Cebu City and Davao City #1 Online Gift Store
-                                <br><small class="text-white text-sm">- One of the developers who built this platform</small>
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Tailwind, Javascript, PHP ,MYSQL, Laravel, Laravel-livewire, Vue Js</span>
-                            </div>
-                        </div>
-
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/flowerstore.jpeg" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="#" style="pointer-events: none; cursor: default;" target="_blank" class="text-content">Source Code</a>
-                                <a href="#" target="_blank" class="text-content">Live
-                                    Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container2">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-right">Flowerstore Attendance System</h2>
-                            <p class="text-content" data-aos="fade-up">
-                                An attendance sysyem for Blue Aurora Solutions Inc / Flowerstore employees, being used for three different countries : Philippines, Thailand, Vietnam
-                            <div class="tools">
-                                <span>HTML, CSS, Tailwind, Javascript, PHP/Laravel, Laravel-livewire, MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="project-right" data-aos="fade-in">
-                            <img src="./img//fs_attendance.jpg" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="#" target="_blank" class="text-content">Source Code</a>
-                                <a href="#" target="_blank" class="text-content">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-right">Tech2U Computer Repair Service</h2>
-                            <p class="text-content" data-aos="fade-up">
-                                Tech2U Computer Repair Service is a place for you to to fix your computers and cellphone gadgets at affordable and reasonable price. We've been repairing broken or corrupted electronic gadgets. Whether your device fell on concrete or water, we'll make
-                                sure it will run again in its best condition.
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, Laravel-livewire, MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="project-right" data-aos="fade-in">
-                            <img src="./img//tech2u.JPG" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="https://github.com/wendell1101/EnricoMerchandise-Ecommerce-laravel" target="_blank" class="text-content">Source Code</a>
-                                <a href="https://tech2urepairs.com/" target="_blank" class="text-content">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- coffeeroyale-->
-                    <div class="project-container2">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left" style="margin-bottom:0!important">Coffee Royale</h2>
-                            <p class="text-content" style="margin-top:0!important" data-aos="fade-up">
-                                Coffee Royale is a café built with passion to share the best coffee experience in every cup. Every cup of coffee is carefully processed to serve you the best quality brewed coffee, from choosing the best beans we can source each season directly from our
-                                farmers, to roasting and grinding the beans and brewing our coffee.
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, SASS, Bootstrap, Javascript, PHP ,MYSQL</span>
-                            </div>
-                        </div>
-
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/coffee_royale.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="https://github.com/wendell1101/Online-Booking-System" target="_blank" class="text-content">Source Code</a>
-                                <a href="https://coffeeroyale1.000webhostapp.com/" target="_blank" class="text-content">Live
-                                    Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--project1-->
-
-                    <div class="project-container">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-right">RMCS</h2>
-                            <p class="text-content" data-aos="fade-up">
-                                An Eccommerce Web application made mainly using Laravel as server-side language. The system admin and managers can directly place cleaning reservations.
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="project-right" data-aos="fade-in">
-                            <img src="./img/rmcs.png" alt="project-image" class="project-image img-fluid" id="rmcs" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="https://github.com/wendell1101/rmcs" target="_blank" class="text-content">Source Code</a>
-                                <a href="https://rmcs.online/" target="_blank" class="text-content">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-container2">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-right">Enrico Merchandise</h2>
-                            <p class="text-content" data-aos="fade-up">
-                                An Eccommerce Web application made mainly using Laravel as server-side language. The customer has the ability to add to cart the selected items, checkout and pay using Cash on Delivery(COD) or through PAYPAL. The system also offers complete administration
-                                panel and users are divided into several roles/privelages such as admin, product manager and customer.
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript, PHP/Laravel, MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="project-right" data-aos="fade-in">
-                            <img src="./img//enrico_merchandise_thumbnail.jpg" alt="project-image" class="project-image img-fluid" id="ecommerce-project" data-aos="fade-in">
-                            <div class="project-demo-container">
-                                <a href="https://github.com/wendell1101/EnricoMerchandise-Ecommerce-laravel" target="_blank" class="text-content">Source Code</a>
-                                <a href="https://enricomerchandise.000webhostapp.com/" target="_blank" class="text-content">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--project2-->
-                    <div class="project-container">
-                        <div class="project-left">
-                            <h2 class="subtitle2" data-aos="fade-left">COMSOC Online Voting System</h2>
-                            <p class="text-content" data-aos="fade-up">
-                                An Online Voting System purpose is to make election more confortable. The student/voter of Computer Society PUP Sto. Tomas can vote easier online by just logging in and choosing his/her desired candidate.
-
-                            </p>
-                            <div class="tools">
-                                <span>HTML, CSS, Bootstrap, Javascript,PHP/Laravel, MYSQL</span>
-                            </div>
-                        </div>
-                        <div class="project-right" data-aos="fade-right">
-                            <img src="./img/comsoc_voting.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                            <div class="project-demo-container" data-aos="fade-in">
-                                <a href="https://github.com/wendell1101/VotingSystem" target="_blank" class="text-content">Source Code</a>
-                                <a href="#" target="_blank" class="text-content">Live
-                                    Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- MORE PROJECTS -->
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h2 class="text-header text-center" data-aos="fade-down">More Projects</h2>
-                    </div>
-                    <div class="col-12 mt-2" data-aos="fade-down">
-                        <div class="line-container">
-                            <div class="line"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <!-- COMSOC VOTING SYSTEM -->
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/cms2.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="https://github.com/wendell1101/TheExpeditions-CMS" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="https://theexpeditions.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/fea_loan.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="https://github.com/wendell1101/loan_app" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="https://fealoan.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- tcu monitoring -->
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/tcu_monitoring.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="https://github.com/wendell1101/elearning" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="https://tcucheck.000webhostapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- st vincent emission -->
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/st_vincent_online_booking.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="#" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="#" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pinoy akademya -->
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/pinoy_akademya_lms.JPG" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="https://github.com/wendell1101/Learning-Management-System" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="https://future-academy.herokuapp.com/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- dragon conqueror -->
-                        <div class="col-md-4 mb-3">
-                            <div class="project p-2">
-                                <img src="./img/dragon_conqueror.png" alt="project-image" class="project-image img-fluid" data-aos="fade-in">
-                                <div class="p-2">
-                                    <a href="https://github.com/wendell1101/Dragon-Conqueror" target="_blank" class="text-content" style="color:#4EFF85!important">Source Code</a>
-                                    <a href="https://dragon-conqueror.netlify.app/" target="_blank" class="text-content" style="color:#4EFF85!important; float:right;">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!--Contact section-->
-        <div class="contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-header text-center" data-aos="fade-down">Get In Touch</h2>
-                    </div>
-                    <div class="col-12 mt-2" data-aos="fade-down">
-                        <div class="line-container contact-line">
-                            <div class="line"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center mt-5 contact-subtitle" data-aos="fade-up">
-                        <h4 class="text-content contact-text mb-2">Let's make something great together.</h4>
-                        <h4 class="text-content contact-text mt-3">Start by <a href="#" class="text-header contact-link">saying hi!</a></h4>
-                    </div>
-                    <div class="contact-info text-center">
-                        <div class="">
-                            <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">+639959768531</h4>
-                            <a class="icon"><i class="contact-icon fas fa-phone" data-aos="fade-up"></i></a>
-                        </div>
-                        <div class="">
-                            <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">wendellchansuazo11@gmail.com</h4>
-                            <a class="icon"><i class="contact-icon far fa-envelope" data-aos="fade-up"></i></a>
-                        </div>
-                        <div class="">
-                            <h4 class="subtitle2 contact-subtitle" data-aos="fade-up">@wendell1101</h4>
-                            <a href="https://github.com/wendell1101" class="icon" data-aos="fade-up"><i class="contact-icon fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center mt-5">
-                        <a href="mailto:wendellchansuazo11@gmail.com" class="btn btn-contact" data-aos="fade-in">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Footer-->
-        <footer>
-            <div class="container justify-content-center">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="#" class="logo"><img src="./img/my_logo.png" class="footer-logo" alt="logo"></a>
-                    </div>
-                    <div class="col-md-12 text-center mt-5">
-                        <div class="footer-icon-container">
-                            <a href="https://www.facebook.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-facebook-f" target="_blank"></i></a>
-                            <a href="https://www.twitter.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-twitter"></i></a>
-                            <a href="https://www.github.com/wendell1101/" target="_blank"><i class="footer-icon fab fa-github" ></i></a>
-                            <a href="https://www.linkedin.com/in/wendell-suazo-8339251aa/" target="_blank"><i class="footer-icon fab fa-linkedin-in" ></i></a>
-                            <a href="https://www.youtube.com/channel/UCprablWZYWvHOMGL49yweOA" target="_blank"><i class="footer-icon fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center mt-5">
-                        <p class="footer-text">Copyright &copy; 2025 - Wendell Suazo</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!--JS-->
-
-    <!--AOS-->
-
-    <script src="./js/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
-
+        <script src="js/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

@@ -1,20 +1,20 @@
-.line-container{
-    width: 200px;
-    position: relative;
-    margin: 0 auto;
-    .line{
-        width: 100%;
-        height: 4px;
-        background: $primaryColor4;
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+    .line {
+        width: 100px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin: 0 10px;
     }
-    .circle{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background: $primaryColor4;
-        width: 12px;
-        height: 12px;
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        background-color: var(--primary-color);
         border-radius: 50%;
     }
 }

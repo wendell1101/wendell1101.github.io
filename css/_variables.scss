@@ -1,4 +1,51 @@
-$primaryColor1: #4eff85;
-$primaryColor2: #495057;
-$primaryColor3: #212529;
-$primaryColor4: #d1cbcb;
+/* _variables.scss */
+
+// Light Mode Colors
+$light-primary: #6c63ff;
+$light-primary-dark: darken($light-primary, 10%);
+$light-secondary: #00bcd4;
+$light-secondary-dark: darken($light-secondary, 10%);
+$light-background: #f4f7f6;
+$light-card-background: #ffffff;
+$light-text-color: #333333;
+$light-heading-color: #222222;
+$light-border-color: #e0e0e0;
+$light-shadow-color: rgba(0, 0, 0, 0.1);
+
+// Dark Mode Colors
+$dark-primary: #8a81ff;
+$dark-primary-dark: darken($dark-primary, 10%);
+$dark-secondary: #26c6da;
+$dark-secondary-dark: darken($dark-secondary, 10%);
+$dark-background: #1a1a2e;
+$dark-card-background: #20204a;
+$dark-text-color: #e0e0e0;
+$dark-heading-color: #ffffff;
+$dark-border-color: #3e3e5c;
+$dark-shadow-color: rgba(0, 0, 0, 0.4);
+
+:root {
+    --primary-color: #{$light-primary};
+    --primary-color-dark: #{$light-primary-dark};
+    --secondary-color: #{$light-secondary};
+    --secondary-color-dark: #{$light-secondary-dark};
+    --background-color: #{$light-background};
+    --card-background-color: #{$light-card-background};
+    --text-color: #{$light-text-color};
+    --heading-color: #{$light-heading-color};
+    --border-color: #{$light-border-color};
+    --shadow-color: #{$light-shadow-color};
+}
+
+.dark-mode {
+    --primary-color: #{$dark-primary};
+    --primary-color-dark: #{$dark-primary-dark};
+    --secondary-color: #{$dark-secondary};
+    --secondary-color-dark: #{$dark-secondary-dark};
+    --background-color: #{$dark-background};
+    --card-background-color: #{$dark-card-background};
+    --text-color: #{$dark-text-color};
+    --heading-color: #{$dark-heading-color};
+    --border-color: #{$dark-border-color};
+    --shadow-color: #{$dark-shadow-color};
+}

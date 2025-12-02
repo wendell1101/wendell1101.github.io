@@ -1,42 +1,70 @@
-.services{
-    min-height: 100vh;
-    background:  $primaryColor3;
-    color: $primaryColor4;
-    padding-top: 100px;
-    overflow: hidden;
-}
-.text-header{
-    margin: 0 auto;
-}
-@import './line';
+.services {
+    padding: 80px 0;
+    background-color: var(--card-background-color);
+    color: var(--text-color);
 
-.about-line{
-    width: 120px!important;
-}
-.service-content{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "service-left service-right";
-}
-.service-right{
-    grid-area: service-right;
-    .service-container{
-        margin-left: auto;
-        width: 100%;
-        padding: .5rem 1rem;
-        background: $primaryColor2;
-        color: $primaryColor4;
-        margin-bottom: 1rem;
-        border-radius: 10px;
+    .text-header {
+        color: var(--heading-color);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .service-content {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .service-icon{
-            font-size: 1.5rem;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        .service-left {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            text-align: center;
+
+            .service-title {
+                color: var(--secondary-color);
+                font-size: 1.8rem;
+            }
+
+            .service-text {
+                line-height: 1.8;
+                margin-top: 20px;
+            }
+        }
+
+        .service-right {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+
+            .service-container {
+                display: flex;
+                align-items: center;
+                background-color: var(--background-color);
+                box-shadow: var(--shadow-color) 0px 8px 24px;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+
+                div {
+                    flex: 1;
+
+                    h5 {
+                        color: var(--heading-color);
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        color: var(--text-color);
+                        margin: 0;
+                    }
+                }
+
+                .service-icon {
+                    font-size: 3rem;
+                    color: var(--primary-color);
+                    margin-left: 20px;
+                }
+            }
         }
     }
-}
-.service-left{
-    grid-area: service-left;
 }
